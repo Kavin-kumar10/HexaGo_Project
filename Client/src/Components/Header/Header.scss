@@ -1,0 +1,49 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    width: 100%;
+    // background-color: white;
+    padding:20px;
+    .logo{
+        h1{
+            font-size: 30px;
+            font-family: 'Indie Flower', cursive;
+            span{
+                color: var(--tertiary-color);
+            font-family: 'Indie Flower', cursive;
+            }
+        }
+        img{
+            height: 90px;
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        li{
+            list-style: none;
+            padding: 0px 20px;
+            font-size: clamp(12px,1.2vw,2vw);
+            color: var(--secondary-color);
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        #profile{
+            opacity: 1;
+            background-color:var(--secondary-color);
+            font-weight: bolder;
+            color: var(--primary-color);
+            border-radius: 5px;
+            padding: 12px;
+            margin-left: 20px;
+        }
+        
+    }
+}

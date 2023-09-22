@@ -1,0 +1,127 @@
+
+.SignUp{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    .poster{
+        background-color: var(--tertiary-color);
+        width: 50%;
+        height: 90%;
+        border-radius: 12px;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+
+        h1{
+            font-size: clamp(1vh,13vw,25vw);
+            font-family: 'Indie Flower', cursive;
+            color: var(--secondary-color);
+            font-weight: 500;
+            width: 90%;
+            span{
+                font-family: 'Indie Flower', cursive;
+                color: var(--primary-color);
+            }
+        }
+        p{
+            font-size: clamp(1vh,2.2vw,10vw);
+            width: 90%;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 5px;
+            
+        }
+    }
+    .SignForm{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        .heading{
+            margin: 50px 0px;
+
+            h1{
+                font-size: clamp(10px,3.2vw,4vw);
+                color: var(--secondary-color);
+                letter-spacing: 3px;
+                margin: 20px 0px;
+            }
+            h4{
+                font-size: clamp(10px,1.5vw,2vw);
+                letter-spacing: 3px;
+                color: var(--secondary-color);
+                opacity: 0.5;
+            }
+        }
+        form{
+            margin: 50px 0px;
+
+            display: flex;
+            justify-content:space-around;
+            flex-direction: column;
+            height: 40vh;
+            .Data_entry{
+                display: flex;
+                flex-direction: column;
+                margin: 12px 0px;
+                label{
+                    font-size: 20px;
+                    margin: 0px;
+                }
+                input{
+                    outline: none;
+                    border: none;
+                    padding: 5px 0px;
+                    font-size: 20px;
+                    background-color: transparent;
+                }
+                .line{
+                    width: 100%;
+                    height: 1px;
+                    background-color: grey;
+                }
+            }
+            .agree{
+                display: flex;
+                input{
+                    margin-right: 10px;
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--tertiary-color);
+                color: var(--primary-color);
+                border: none;
+                outline: none;
+                font-size: clamp(1vw,1.5vw,50px);
+                border-radius: 10px;
+                width: clamp(100px,8vw,10vw);
+                padding: 5px 0px;
+                margin: 30px 0px;
+            }
+            p{
+                span{
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .SignUp{
+        .poster{
+            display: none;
+        }
+        .SignForm{
+            width: 100%;
+        }
+    }
+}

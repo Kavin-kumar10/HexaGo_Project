@@ -1,0 +1,21 @@
+
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .countdown-item {
+      text-align: center;
+      margin:0px 10px;
+      .number {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .label {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+  

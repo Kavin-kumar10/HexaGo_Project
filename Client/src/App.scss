@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Eczar&family=Glory&family=Indie+Flower&family=Josefin+Slab&family=Mukta:wght@300&family=Playfair+Display&family=Poiret+One&family=Quicksand:wght@500&family=Rubik&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+
+body, p, div, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  position: absolute;
+  height: 100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+:root{
+  --primary-color:#F5F5FA;
+  --secondary-color:#141438;
+  // --primary-color:#1F1F29;
+  // --secondary-color:#F5F5FA;
+  --tertiary-color:#D09200;
+  --dark-color:black;
+  --bright-color:white;
+}

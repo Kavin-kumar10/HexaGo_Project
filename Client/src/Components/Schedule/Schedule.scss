@@ -1,0 +1,126 @@
+.Schedule{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(225, 225, 225, 0.9);
+    z-index: 100;
+    .Schedule_contain{
+        height: 90vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 12px;
+        .Schedule_top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 15%;
+            width: 90%;
+            .Schedule_head{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px;
+                h2{
+                    font-size: clamp(25px,2vw,4vw);
+                    font-weight: 900;
+                    color: var(--secondary-color);
+                }
+            }
+            form{
+                width: 100%;
+                input{
+                    padding: 12px;
+                    width: 50%;
+                    border-radius: 10px;
+                    outline: none;
+                    border: 1px solid rgba(0, 0, 0, 0.74);
+                }
+                button{
+                    width: 150px;
+                    padding: 10px;
+                    font-size: 20px;
+                    margin-left: 20px;
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                    outline: none;
+                    border: transparent;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .leaflet-container{
+            width: 90%;
+            height: 70%;
+            border-radius: 5px;
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip{
+                display: flex;
+                align-items: center;
+                width: 300px;
+                .selector{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: max-content;
+                    h3{
+                        font-size: 18px;
+                    }
+                    h4{
+                        color: green;
+                        font-size: 14px;
+                    }
+                    button{
+                        padding: 5px 20px;
+                        outline: none;
+                        border: 1px solid var(--secondary-color);
+                        background-color: transparent;
+                        border-radius: 5px;
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+
+        .Schedule_bottom{
+            width: 90%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3{
+                font-weight: 900;
+                span{
+                    color: var(--tertiary-color);
+                }
+            }
+            .Schedule_btn{
+                button{
+                    padding: 8px 25px;
+                    margin-left: 20px;
+                    font-size: 20px;
+                    border-radius: 8px;
+                    border: 1px solid grey;
+                    outline: none;
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+                #Cancel{
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}
+
